@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"Test-CF/httpserv"
+	"Test-CF/infrastructure"
+)
 
 func main() {
-	fmt.Print("HEALTHY!")
+	infrastructure.InitConfig()
+	infrastructure.InitDb()
+	httpserv.Run()
 }

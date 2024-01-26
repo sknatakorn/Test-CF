@@ -1,0 +1,7 @@
+app:
+  name: Test-CF
+  port: 8080
+
+
+db:
+  name: test-cf.db
